@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Galada" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Pixel-art Maker</title>
+</head>
+
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <br>
+    <form id="sizePicker">
+        <p>Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="4">
+        </p>
+
+        <p> Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="4">
+        </p>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker" value="#561472">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
